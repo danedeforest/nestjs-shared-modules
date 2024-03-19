@@ -1,0 +1,1 @@
+import { Module } from '@nestjs/common';\nimport { CommonService } from './services/common.service';\n\n@Module({\n  providers: [CommonService],\n  exports: [CommonService],\n})\nexport class SharedModule {}\n
